@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">যাকাতের হিসাব</string>
+    <string-array name="sonalArray">
+        <item>১৮ ক্যারেটের স্বর্ণের ভরি-৫৭১৯২.৩০ টাকা</item>
+        <item>২১ ক্যারেটের স্বর্ণের ভরি-৬৫৯৩৭.৩০ টাকা</item>
+        <item>২২ ক্যারেটের স্বর্ণের ভরি-৬৯০৮৫.৫০ টাকা</item>
+        <item>সনাতন স্বর্ণের ভরি-৪৬৮৭৩.২০ টাকা</item>
+    </string-array>
+    <string-array name="rupaArray">
+        <item>১৮ ক্যারেটের রুপার ভরি-১২২৪.৩০ টাকা</item>
+        <item>২১ ক্যারেটের রুপার ভরি-১৪৩৪.১৮ টাকা</item>
+        <item>২২ ক্যারেটের রুপার ভরি-১৫১৫.৮০ টাকা</item>
+        <item>সনাতন রুপার ভরি-৯৩৩.০০ টাকা</item>
+    </string-array>
+</resources>

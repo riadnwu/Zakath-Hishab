@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/liniar_layout_border">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="যাকাতের নেসাব"
+                android:textAppearance="@style/TextViewStyleTitel"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="১। যাকাতের নেসাব ৭.৫ ভরি স্বর্ণ বা ৫২.৫ ভরি রুপার মালিক হওয়ার পর হিজরি সনের এক বছর পূর্ণ হলে যাকাত ফরয হবে\n২। যদি একক ভাবে স্বর্ণ বা রুপার নেসাব পূর্ণ না হয় কিছু স্বর্ণ ও কিছুর রুপা থাকে এবং কিছু নগদ অর্থ বা ব্যবসায়িক পণ্য থাকে তবে সব গুলোর মূল্য যোগ করে ৫২.৫ ভরি রুপার মূল্য সমান হলে যাকাত ফরয হবে"
+                android:textAlignment="gravity"
+                android:textAppearance="@style/TextViewStyle" />
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="যাকাত আদায়ের সহজ পদ্ধতি"
+                android:textAppearance="@style/TextViewStyleTitel"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="১। প্রথম হিজরী তারিখ অনুযায়ী নেসাব পরিমাণ সম্পদের ওপর এক বছর পূর্ণ হওয়ার হিসাব নির্ধারণ করতে হবে\n২। যাকাত আদায়ের নির্ধারিত তারিখ যেদিন আসবে সেই দিন যাকাত দাতার সমস্ত মাল বাজার দর অনুযায়ী হিসাব করতে হবে\n৩। মোট সম্পদ থেকে মোট ঋণ বিয়োগ করে যদি নেসাব পরিমান থেকে বেশি হয় তাহলে বিয়োগফল এর আড়াই পার্সেন্ট জাকাত হবে"
+                android:textAppearance="@style/TextViewStyle" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/nesabView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="৪। যাকাতের বর্তমান নেসাব টাকা\n"
+                    android:textAppearance="@style/TextViewStyle"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/neasbValue"
+                    style="@style/EditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_bordar"
+                    android:hint="নেসাব টাকা"
+                    android:text="48982.50"
+                    android:inputType="numberDecimal"
+                    android:selectAllOnFocus="false" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_border"
+                style="@style/SpinnerStyle"
+                tools:ignore="MissingConstraints" >
+            <Spinner
+                android:id="@+id/sonaSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/SpinnerStyle"
+                android:background="@drawable/spinner_border"
+                tools:ignore="MissingConstraints" >
+            <Spinner
+                android:id="@+id/rupaSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/mainButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_bordar"
+                style="@style/ButtonStyle"
+                android:text="আপনার যাকাত হিসাব করুন" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
